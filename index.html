@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="justChance"></div>
+    <center><h1>Conversion</h1>
+    <h6>BINARY|DECIMAL|OCTAL|HEXADECIMAL NUMBER SYSTEM</h6></center>
+
+    <div class="conversion">
+
+        <!--THIS IS FOR THE CONVERSION OF DECIMAL FORM-->
+        <div class="container">
+        <div class="display" style="width:230px; height:50px; background-color: black; color:white;">
+            <p>result:</p>
+            <p id="result">00</p>
+        </div>
+       
+        <div class="btn">
+            <br>
+            <label for="base16"> <input type="radio" name="group1" id="base16">  Hexadecimal</label>
+            <label for="base8"><input type="radio" name="group1" id="base8">Octal</label>
+            <label for="base2"><input type="radio" name="group1" id="base2">Binary</label>
+            <br>
+        </div>
+        <div class="value">
+            <label for="base10">Value in Decimal:</label><br>
+            <input type="number" name="valde" id="valde" >
+            <input type="submit" value="Convert" id="submit1" onclick="validateDec()"><br><br>
+            <p id="pErr" style="color:red;"></p>
+        </div></div>
+
+        <!--THIS IS FOR THE CONVERSION OF BINARY-->
+        <div class="container">
+        <div class="display" style="width:230px; height:50px; background-color: black; color:white;">
+            <p>result:</p>
+            <p id="result1">00</p>
+        </div>
+
+        <div class="btn">
+            <br>
+            <label for="base16"> <input type="radio" name="group2" id="base16_a"> Hexadecimal</label>
+            <label for="base8"><input type="radio" name="group2" id="base8_a">Octal</label>
+            <label for="base10"><input type="radio" name="group2" id="base10_a">Decimal</label>
+            <br>
+        </div>
+        <div class="value">
+            <label for="base2">Value in Binary:</label><br>
+            <input type="number" name="valbi" id="valbi" >
+            <input type="submit" value="Convert" id="submit2">
+            <p id="pErr1"></p>
+        </div></div>
+
+
+        <!--THIS IS FOR THE CONVERSION OF OCTAL SECTION-->
+        <div class="container">
+        <div class="display" style="width:230px; height:50px; background-color: black; color:white;">
+            <p>result:</p>
+            <p id="result2">00</p>
+        </div>
+
+        <div class="btn">
+            <br>
+            <label for="base16"> <input type="radio" name="group3" id="base16_b"> Hexadecimal</label>
+            <label for="base2"><input type="radio" name="group3" id="base2_b">Binary</label>
+            <label for="base10"><input type="radio" name="group3" id="base10_b">Decimal</label>
+            <br>
+        </div>
+        <div class="value">
+            <label for="base8">Value in Octal:</label><br>
+            <input type="number" name="valoct" id="valoct" >
+            <input type="submit" value="Convert" id="submit3">
+            <p id="pErr2"></p>
+        </div></div>
+
+        <!--THIS IS FOR THE CONVERSION OF HEXADECIMAL SECTION  -->
+        <div class="container">
+        <div class="display" style="width:230px; height:50px; background-color: black; color:white;">
+            <p>result:</p>
+            <p id="result3">00</p>
+        </div>
+
+        <div class="btn">
+            <br>
+            <label for="base8"> <input type="radio" name="group2" id="base8_c"> Octal</label>
+            <label for="base2"><input type="radio" name="group2" id="base2_c">Binary</label>
+            <label for="base10"><input type="radio" name="group2" id="base10_c">Decimal</label>
+            <br>
+        </div>
+        <div class="value">
+            <label for="base16">Value in Hexadecimal:</label><br>
+            <input type="text" name="valHex" id="valHex" >
+            <input type="submit" value="Convert" id="submit4">
+            <p id="pErr3"></p>
+        </div></div>
+    </div>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>

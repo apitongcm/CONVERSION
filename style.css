@@ -1,0 +1,45 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+ width: 100vw;
+ height:150vh;
+ 
+}
+
+.conversion {
+    width:85vw;
+    position: relative;
+    margin-inline:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.container {
+    background:white;
+    border-radius:1rem;
+    padding:10px;
+    margin:2vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.btn {
+    display:flex;
+    flex-direction:column;
+    
+}
+
+#submit4, #submit1, #submit2, #submit3{
+    
+
+}
